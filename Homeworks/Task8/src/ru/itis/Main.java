@@ -24,7 +24,7 @@ public class Main {
         Program criminalNews =
                 new Program("Сегодня", "12:00", "12:20");
         Program youNotBelieve =
-                new Program("Ты не поверишь", "15:15", "16:15");
+                new Program("Ты не поверишь", "20:15", "22:15");
 
         Channel ntv = new Channel("НТВ");
 
@@ -37,7 +37,7 @@ public class Main {
         tv.add(firstChannel);
         tv.add(ntv);
 
-        tv.switchChannel(0);
+        TvRemote tvRemote = new TvRemote(tv);
 
     }
 }

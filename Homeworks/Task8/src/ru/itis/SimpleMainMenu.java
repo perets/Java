@@ -17,7 +17,8 @@ public class SimpleMainMenu {
         while (true) {
             System.out.println("1. Создать канал");
             System.out.println("2. Показать список передач первого канала");
-            System.out.println("3. Выход");
+            System.out.println("2. Пульт управления телевизором");
+            System.out.println("4. Выход");
 
             int command = scanner.nextInt();
 
@@ -44,9 +45,15 @@ public class SimpleMainMenu {
                 } break;
                 case 2: {
                     channels[0].showAllPrograms();
-                }case 3:{
+                }break;
+
+                case 3:{
+                //    TvRemote tvRemote = new TvRemote();
+                }
+                case 4:{
                     System.exit(0);
                 }
+
             }
         }
     }
