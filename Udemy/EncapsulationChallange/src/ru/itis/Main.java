@@ -1,5 +1,7 @@
 package ru.itis;
 
+import java.lang.reflect.Field;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,6 +10,8 @@ public class Main {
         printer.print(10);
         System.out.println(""+printer.getTonerLevel());
         System.out.println(""+printer.getNumberOfPrintedPages());
-        printer.fillToner();;
+        printer.fillToner();
+
+        
     }
 }
